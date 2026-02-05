@@ -16,7 +16,7 @@ function renderTable() {
     row.innerHTML = `
       <td class="${rankClass}">${index + 1}</td>
       <td>
-        <img src="${team.logo || 'https://via.placeholder.com/50'}" class="team-logo">
+        <img src="${team.logo }" class="team-logo">
         <input type="file" accept="image/*" onchange="uploadLogo(event, ${index})">
       </td>
       <td><input type="text" value="${team.name}" id="name-${index}"></td>
