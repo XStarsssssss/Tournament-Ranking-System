@@ -1,0 +1,167 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  margin-top: 20px;
+  color: rgb(254, 254, 254);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  background: #1e293b;
+  padding: 15px 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  flex-wrap: wrap;
+  border-radius: 100px;
+}
+
+.header img {
+  width: 60px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 100px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+
+.container {
+  padding: 15px;
+  text-align: center;
+}
+
+.controls {
+  margin-bottom: 10px;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.add-btn { 
+  background: #3b82f6; 
+  color: white; 
+}
+.reset-btn { 
+  background: #ef4444; 
+  color: white; 
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 950px;
+  border-collapse: collapse;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #334155;
+  text-align: center;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+th { 
+  background: #334155; 
+}
+tr:hover {
+   background: #2d3b55; 
+  }
+
+input[type="number"], input[type="text"] {
+  width: 60px;
+  padding: 4px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  font-size: 13px;
+}
+
+input[type="text"] { 
+  width: 160px; 
+}
+
+button.save-btn {
+  background: #22c55e; color: white; 
+  font-size: 12px; 
+  padding: 4px 8px; 
+  border-radius: 5px; 
+}
+button.delete-btn { background: #ef4444;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 5px; 
+}
+
+img.team-logo {
+  width: 50px;       
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #475569;
+  display: block;
+  margin: 0 auto 4px;
+}
+
+td input[type="file"] {
+  width: 60px;
+  font-size: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.rank1 { 
+  color: gold; 
+  font-weight: bold; 
+}
+.rank2 { 
+  color: silver; 
+  font-weight: bold; 
+}
+.rank3 { 
+  color: #cd7f32; 
+  font-weight: bold; 
+}
+
+@media (max-width: 600px) {
+  .header h1 { font-size: 18px; }
+  .header img { width: 40px; height: 40px; }
+  th, td { font-size: 12px; padding: 6px; }
+  input[type="number"], input[type="text"] { width: 50px; font-size: 12px; }
+  input[type="text"] { width: 80px; }
+  img.team-logo { width: 35px; height: 35px; }
+  td input[type="file"] { width: 50px; font-size: 9px; }
+}
+.footer {
+  text-align: center;
+  background: #1e293b;
+  color: #94a3b8;  
+  padding: 12px 0;
+  font-size: 14px;
+  margin-top: 20px;
+  border-top: 1px solid #334155;
+}
+

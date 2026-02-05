@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MND 2026 Tournament Ranking System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="header">
+    <img src="/image/logo.png" alt="Tournament Logo">
+    <h1>MND 2026 Tournament Ranking System</h1>
+  </div>
+
+  <div class="container">
+    <div class="controls">
+      <button class="add-btn" onclick="addTeam()">Add Team</button>
+      <button class="reset-btn" onclick="resetData()">Remove All</button>
+    </div>
+
+    <div class="table-container">
+      <table id="rankingTable">
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Logo</th>
+            <th>Team Name</th>
+            <th>M</th>
+            <th>W</th>
+            <th>L</th>
+            <th>Points</th>
+            <th>Save</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <footer class="footer"> Developer By X-Star</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
