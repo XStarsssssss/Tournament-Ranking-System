@@ -14,10 +14,22 @@
   </div>
 
   <div class="container">
-    <div class="controls">
-      <button class="add-btn" onclick="addTeam()">Add Team</button>
-      <button class="reset-btn" onclick="resetData()">Remove All</button>
-    </div>
+    <nav>
+      <ul>
+        <div class="controls">
+          <button class="add-btn" onclick="addTeam()">Add Team</button>
+          <button class="reset-btn" onclick="resetData()">Remove All</button>
+        </div>
+        <li>
+          <a class="zone" href="#">Zone</a>
+          <ul>
+            <li><button onclick="setZone('safe')">Safe</button></li>
+            <li><button onclick="setZone('danger')">Danger</button></li>
+            <li><button onclick="setZone('eliminated')">Eliminated</button></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
 
     <div class="table-container">
       <table id="rankingTable">
@@ -39,7 +51,7 @@
     </div>
   </div>
 
-  <footer class="footer"> Developer By X-Star</footer>
+  <footer class="footer">Developer By X-Star</footer>
 
   <script src="script.js"></script>
 </body>
